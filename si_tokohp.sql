@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 17, 2023 at 02:48 PM
+-- Generation Time: Jun 18, 2023 at 03:25 AM
 -- Server version: 8.0.30
 -- PHP Version: 7.4.33
 
@@ -32,15 +32,9 @@ CREATE TABLE `product_hp` (
   `productCategory` varchar(250) NOT NULL,
   `productName` varchar(250) NOT NULL,
   `price` double(15,2) NOT NULL,
-  `qty` int NOT NULL
+  `qty` int NOT NULL,
+  `gambar` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `product_hp`
---
-
-INSERT INTO `product_hp` (`productId`, `productCategory`, `productName`, `price`, `qty`) VALUES
-(1, 'Smartphone', 'Xiaomi redmi note 5', 2000000.00, 30);
 
 --
 -- Indexes for dumped tables
@@ -60,7 +54,7 @@ ALTER TABLE `product_hp`
 -- AUTO_INCREMENT for table `product_hp`
 --
 ALTER TABLE `product_hp`
-  MODIFY `productId` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `productId` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
